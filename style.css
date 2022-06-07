@@ -1,0 +1,127 @@
+* {
+ margin: 0;
+ box-sizing: border-box;
+}
+.body {
+ width: 1440px;
+ height: 800px;
+}
+.box {
+ display: grid;
+ grid-template-columns: 300px 300px 300px;
+ grid-template-rows: 500px;
+ margin: 0 auto;
+ justify-content: center;
+ align-content: center;
+ /* position: relative; */
+ padding-top: 100px;
+}
+.sedans {
+ background-color: hsl(31, 77%, 52%);
+ position: relative;
+ padding-left: 40px;
+}
+.suvs {
+ background-color: hsl(184, 100%, 22%);
+ position: relative;
+ padding-left: 40px;
+}
+.luxury {
+ background-color: hsl(179, 100%, 13%);
+ position: relative;
+ padding-left: 40px;
+}
+h1 {
+ color: white;
+ /* text-align: center; */
+ font-family: 'Big Shoulders Display', cursive;
+ text-transform: uppercase;
+ text-align: left;
+ font-size: xx-large;
+}
+p {
+ color: white;
+ /* text-align: center; */
+ text-align: left;
+ font-size: 15px;
+ font-family: 'Lexend Deca', sans-serif;
+ /* text-indent: 0px; */
+ line-height: 2;
+ width: 200px;
+}
+a {
+ text-decoration: none;
+ /* color: hsl(31, 77%, 52%); */
+ font-family: 'Lexend Deca', sans-serif;
+ text-transform: capitalize;
+ 
+}
+.a-sedans {
+ color: hsl(31, 77%, 52%);
+}
+.a-suvs {
+ color: hsl(184, 100%, 22%);
+}
+.a-luxurys {
+ color: hsl(179, 100%, 13%);
+}
+/* button {
+ position: absolute;
+ bottom: 20px;
+} */
+.button-sedans{
+ color: hsl(31, 77%, 52%);
+ position: absolute;
+ bottom: 40px;
+ left: 40px;
+ width: 150px;
+ height: 40px;
+ border-radius: 20px;
+ border: 0.5px solid hsl(31, 77%, 52%);
+}
+.button-suvs{
+ color: hsl(184, 100%, 22%);
+ position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0.5px solid hsl(184, 100%, 22%);
+}
+.button-luxurys{
+ color: hsl(179, 100%, 13%);
+ position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0.5px solid hsl(179, 100%, 13%);
+}
+.button-sedans:hover {
+ background-color: hsl(31, 77%, 52%);
+ border: 1px solid white;
+}
+.button-suvs:hover {
+ background-color: hsl(184, 100%, 22%);
+ border: 1px solid white;
+}
+.button-luxurys:hover {
+ background-color: hsl(179, 100%, 13%);
+ border: 1px solid white;
+}
+a:hover {
+ color: white;
+}
+/* mobile  */
+@media screen and (max-width:375px) {
+  .box {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 500px 500px 500px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
